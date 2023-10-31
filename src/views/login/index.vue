@@ -55,7 +55,7 @@ export default {
 <style scoped>
 .menu {
 	width: 100%;
-	height: 50px;
+	height: 70px;
 	position: absolute;
 	bottom: 0px;
 	right: 0px;

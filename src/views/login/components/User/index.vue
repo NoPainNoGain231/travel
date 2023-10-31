@@ -22,20 +22,20 @@
 				</div>
 			</div>
 			<div v-if="flag == 0" class="bgn-login">
-				<button @click="change" class="btn_change">用户登录</button>
+				<el-button @click="change" class="btn_change">用户登录</el-button>
 			</div>
 			<div class="register" v-if="flag == 0">
-				<div class="title">用户注册</div>
+				<div class="title" style="margin-bottom: 25px;">用户注册</div>
 				<div class="item">
-					<input type="text" placeholder="用户名" v-model="userName" />
+					<el-input type="text" placeholder="用户名" v-model="userName" />
 				</div>
 				<div class="item">
-					<input type="text" placeholder="密码" v-model="password" />
+					<el-input type="text" placeholder="密码" v-model="password" />
 				</div>
 				<div class="item">
-					<input type="text" placeholder="确认密码" v-model="check_password" />
+					<el-input type="text" placeholder="确认密码" v-model="check_password" />
 				</div>
-				<div class="item">
+				<div class="item-choose">
 					<label>角色：</label>
 					<input type="radio" id="yk" :value="1" v-model="category" />
 					<label for="yk">游客</label>
@@ -43,7 +43,7 @@
 					<label for="sj">商家</label>
 				</div>
 				<div class="item">
-					<button type="button" @click="register">注册</button>
+					<el-button type="button" @click="register">注册</el-button>
 				</div>
 			</div>
 			<div v-if="flag == 1" class="bgn-register">
@@ -136,7 +136,7 @@ export default {
 
 <style scoped>
 .main {
-	background-color: aliceblue;
+	/* background-color: aliceblue; */
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -150,6 +150,7 @@ export default {
 	height: 400px;
 	box-shadow: -5px 5px 8px 0px #9b9b9b;
 	border-radius: 15px;
+	background-color: aliceblue;
 }
 
 .login {
