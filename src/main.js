@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Login from './views/login'
+import Home from './views/home'
 import router from './router'
 import request from './request'
 // ElementUI依赖
@@ -15,7 +16,7 @@ Vue.config.productionTip = false
 Vue.prototype.request = request
 new Vue({
   router,
-  render: h => h(Login),
+  render: h => h(Home),
 }).$mount('#app')
 
 
