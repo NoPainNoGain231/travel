@@ -1,0 +1,9 @@
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+    width: 200px;
+    min-height: 400px;
+}
+
+.home_aside .el-button{
+    border: none;
+    font-size: 18px;
+}

@@ -1,0 +1,32 @@
+#header{
+    height: 100%;
+    padding: 0px;
+}
+
+.order, .user {
+    float: right;
+    background-color: white;
+}
+.search {
+    float: left;
+    margin-left: 300px;
+}
+.search .el-input{
+    width: 200px ;
+}
+.search .el-input input{
+    width: 200px;
+    border: 1px solid #409EFF;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 15px;
+}
+.search .el-button {
+    height: 40px;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}

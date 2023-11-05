@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<User v-show="userShow" />
-		<Admin v-show="adminShow" />
+		<User v-show="userShow" @btn_view="btn_view_handler" />
+		<Admin v-show="adminShow" @btn_view="btn_view_handler"/>
 		<nav class="menu">
 			<table style="width: 100%; height: 100%">
 				<tr>
@@ -53,17 +53,5 @@ export default {
 </script>
 
 <style scoped>
-.menu {
-	width: 100%;
-	height: 70px;
-	position: absolute;
-	bottom: 0px;
-	right: 0px;
-	background-color: rgb(187, 187, 187);
-}
-.menu table tr td {
-	width: 50%;
-	text-align: center;
-	font-size: 20px;
-}
+@import './login_index.css'
 </style>
