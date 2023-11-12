@@ -16,7 +16,7 @@ Vue.config.productionTip = false
 Vue.prototype.request = request
 new Vue({
   router,
-  render: h => h(Home),
+  render: h => h(Login),
 }).$mount('#app')
 
 

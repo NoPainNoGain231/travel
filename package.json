@@ -13,6 +13,7 @@
     "element-ui": "^2.15.14",
     "rimraf": "^5.0.5",
     "vue": "^2.6.14",
+    "vue-amap": "^0.5.10",
     "vue-router": "^3.6.5"
   },
   "devDependencies": {

@@ -8,6 +8,7 @@ Vue.use(VueRouter)      //vue加载vue-router库
 const routes = [
     {
         path:'/login',
+        name:'login',
         component:Login,
     },
     {
