@@ -1,6 +1,5 @@
 import Vue from 'vue'
-import Login from './views/login'
-import Home from './views/home'
+import App from './App.vue'
 import router from './router'
 import request from './request'
 // ElementUI依赖
@@ -11,13 +10,12 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI);
 // Vue.use(components);
 // Vue.use(views);
+Vue.use(router)
 Vue.use(request);
 Vue.config.productionTip = false
 Vue.prototype.request = request
 new Vue({
   router,
-  render: h => h(Login),
+  render: h => h(App),
 }).$mount('#app')
-
-
 

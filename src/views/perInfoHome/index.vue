@@ -1,16 +1,15 @@
 <template>
     <div class="home">
         <el-container>
-            <el-aside :width="isCollapse ? '5%' : '15%'">
-                <Aside @Collapse="isCollapseHandler" />
-            </el-aside>
-            <el-aside :width="isCollapse ? '5%' : '15%'"></el-aside>
+            <el-header>
+                <Header />
+            </el-header>
             <el-container>
-                <el-header>
-                    <Header />
-                </el-header>
+                <el-aside>
+                    <Aside />
+                </el-aside>
                 <el-main>
-                    <Main />
+                    <Main :id="id"/>
                 </el-main>
             </el-container>
         </el-container>
@@ -18,15 +17,16 @@
 </template>
 
 <script>
-import Main from './components/main'
-import Header from './components/header'
-import Aside from './components/aside'
+import Aside from './components/aside';
+import Header from './components/header';
+import Main from './components/main';
 export default {
     components: {
         Main,
         Header,
         Aside
     },
+
     data() {
         return {
             isCollapse: true,
@@ -42,25 +42,27 @@ export default {
 </script>
 
 <style scoped>
-.el-header,
-.el-footer {
+.el-header {
     background-color: white;
     color: #333;
     text-align: center;
     line-height: 60px;
 }
 
-.el-aside:nth-child(1) {
+.el-aside {
     color: #333;
-    position: fixed;
     overflow: hidden;
+    width: 200px !important;
 }
 
 .el-main {
     color: #333;
-    text-align: center;
 }
-
-body>.el-container {
+.home{
+    width: 80%;
+    margin: 0px auto;
+}
+.home>.el-container {
     margin-bottom: 40px;
-}</style>
+}
+</style>

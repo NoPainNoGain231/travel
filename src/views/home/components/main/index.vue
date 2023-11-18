@@ -85,5 +85,105 @@ export default {
 </script>
 
 <style scoped>
-@import './main_index.css'
+.el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 250px;
+    margin: 0;
+}
+
+.el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
+}
+
+.hotel,
+.travel {
+    width: 100%;
+}
+
+.hotel .title,
+.travel .title {
+    margin: 35px 0px;
+    width: 100%;
+}
+
+.hotel .title label:nth-child(1),
+.travel .title label:nth-child(1) {
+    float: left;
+}
+
+.hotel .title label:nth-child(2),
+.travel .title label:nth-child(2) {
+    font-size: 18px;
+    margin-right: 100px;
+    float: right;
+    line-height: 30px;
+}
+
+.hotel .item {
+    width: 100%;
+    height: 320px;
+    margin: 20px 0px;
+}
+
+.hotel .item .item-list {
+    width: 17%;
+    height: 300px;
+    margin: 10px 20px;
+    background-color: antiquewhite;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hotel .item .item-list:hover {
+    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.3);
+}
+
+.item-list .el-image {
+    margin: 0px;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.item-list label {
+    position: relative;
+}
+
+.travel .item {
+    width: 100%;
+    height: 320px;
+    margin: 20px 0px;
+}
+
+.travel .item .item-list {
+    width: 20%;
+    height: 300px;
+    margin: 10px 20px;
+    background-color: antiquewhite;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.travel .item .item-list:hover {
+    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.3);
+}
+
+.travel .item .item-list .el-image {
+    margin: 0px;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.travel .item .item-list label {
+    position: relative;
+}
 </style>

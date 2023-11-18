@@ -3,7 +3,7 @@
         <el-button class="el-icon-s-unfold" v-on:click="aside_change()"></el-button>
         <el-menu default-active="1-4-1" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose"
             :collapse="isCollapse">
-            
+
             <el-menu-item index="1">
                 <i class="el-icon-menu"></i>
                 <span slot="title">导航二</span>
@@ -32,13 +32,13 @@ export default {
         };
     },
     methods: {
-        aside_change(){
-            if(this.isCollapse==true){
-                this.isCollapse=false;
-                this.$emit('Collapse',this.isCollapse);
-            }else{
-                this.isCollapse=true;
-                this.$emit('Collapse',this.isCollapse);
+        aside_change() {
+            if (this.isCollapse == true) {
+                this.isCollapse = false;
+                this.$emit('Collapse', this.isCollapse);
+            } else {
+                this.isCollapse = true;
+                this.$emit('Collapse', this.isCollapse);
             }
         },
         handleOpen(key, keyPath) {
@@ -52,5 +52,13 @@ export default {
 </script>
 
 <style scoped>
-@import './aside_index.css'
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+    width: 200px;
+    min-height: 400px;
+}
+
+.home_aside .el-button {
+    border: none;
+    font-size: 18px;
+}
 </style>
